@@ -55,3 +55,17 @@ if (document.querySelector('a').hasAttribute("target")) {
 } else {
     console.error("Le premier lien ne possède pas l'attribut target");
 }
+
+
+
+// Liste des classes de l'élément identifié par "antiques"
+let classes = document.getElementById('antiques').classList;
+console.log(classes.length);    // Affiche 1 : l'élément possède une seule classe
+console.log(classes[0]);    // Affiche "merveilles"
+
+// Tester la présence d'une classe avec la méthode contains
+if (document.getElementById('antiques').classList.contains('merveilles')) {
+    console.log("L'élément identifié par antiques possède la classe merveilles");
+} else {
+    console.error("L'élément identifié par antiques ne possède pas la classe merveilles");
+}
