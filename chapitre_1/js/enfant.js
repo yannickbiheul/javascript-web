@@ -9,15 +9,12 @@ function afficherEnfant(noeud, indice) {
     if (noeud.nodeType === document.TEXT_NODE) {
         console.error("Type de noeud incorrect");
     } else {
-        if (indice < 0) {
-            console.error("Indice incorrect");
-        } else if (indice > noeud.childNodes.length) {
+        if ((indice < 0) || (indice > noeud.childNodes.length)) {
             console.error("Indice incorrect");
         } else {
             console.log(noeud.childNodes[indice]);
         }
     }
-    
 }
 
 // Doit afficher le noeud h1
