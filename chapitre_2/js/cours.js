@@ -32,3 +32,26 @@ console.log(document.querySelectorAll('#antiques > .existe').length);
 
 // Le premier paragraphe
 console.log(document.querySelector("p"));
+
+
+
+// Le contenu HTML de l'élément identifié par "contenu"
+console.log(document.getElementById('contenu').innerHTML);
+
+// Le contenu textuel de l'élément identifié par "contenu"
+console.log(document.getElementById('contenu').textContent);
+
+// L'attribut href du premier lien
+console.log(document.querySelector('a').getAttribute('href'));
+
+// L'identifiant de la première liste
+console.log(document.querySelector('ul').id);
+
+// L'attribut href du premier lien
+console.log(document.querySelector('a').href);
+
+if (document.querySelector('a').hasAttribute("target")) {
+    console.log("Le premier lien possède l'attribut target");
+} else {
+    console.error("Le premier lien ne possède pas l'attribut target");
+}
