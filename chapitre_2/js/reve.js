@@ -1,6 +1,10 @@
 // TODO : écrire la fonction compterElements
 function compterElements(noeud) {
-    console.log(document.querySelector(noeud).length);
+    if (noeud.innerHTML) {
+        console.log(noeud);
+    } else {
+        console.error("Y'a un problème là !");
+    }
 }
 
 
