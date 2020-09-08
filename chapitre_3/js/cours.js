@@ -66,3 +66,11 @@ document.getElementById("langages").insertAdjacentHTML("afterbegin", '<li id="ja
     afterend : après l'élémnet cible.
 */
 
+// Remplacer Perl par Bash
+let bashElt = document.createElement("li");
+bashElt.id = "bash";
+bashElt.textContent = "Bash";
+document.getElementById("langages").replaceChild(bashElt, perlElt);
+
+// Supprimer bash
+document.getElementById("langages").removeChild(document.getElementById("bash"));
