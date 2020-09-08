@@ -74,3 +74,8 @@ document.getElementById("langages").replaceChild(bashElt, perlElt);
 
 // Supprimer bash
 document.getElementById("langages").removeChild(document.getElementById("bash"));
+
+// Ajout d'un paragraphe
+let para = document.createElement("p");
+para.innerHTML = 'En voici une <a href="https://fr.wikipedia.org/wiki/Liste_des_langages_de_programmation">liste</a> plus complète.';
+document.getElementById("contenu").insertBefore(para, div);
