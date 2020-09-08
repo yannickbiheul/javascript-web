@@ -11,6 +11,10 @@ var mots = [
     {
         terme: "Oxymore",
         definition: "Figure de style qui réunit dans un même syntagme deux termes sémantiquement opposés"
+    },
+    {
+        terme: "Bonjour",
+        definition: "Phrase de politesse qui sert à saluer"
     }
 ];
 
@@ -18,7 +22,6 @@ var mots = [
 
 // Création de la balise dl
 let dl = document.createElement("dl");
-dl.id = "listeDL";
 // Ajout du dl à la div contenu
 document.getElementById("contenu").appendChild(dl);
 
