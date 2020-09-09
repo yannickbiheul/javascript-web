@@ -42,3 +42,19 @@ Cours JavaScript sur OpenClassRooms
 * Les propriétés CSS composées s'écrivent avec la norme camelCase en JavaScript. Par exemple, "font-family" devient "fontFamily" .
 
 * La propriété JavaScript style est insuffisante pour accéder au style d'un élément. Pour cela, on utilise la fonction "getComputedStyle".
+
+# Les Événements
+
+* On peut rendre une page web interactive en écrivant du code JavaScript qui réagit aux événements déclenchés sur la page.
+
+* De nombreux types d'événements peuvent être gérés. Chaque type d'événement est associé à un objet "Event" spécifique qui apporte des informations sur l'événement via ses propriétés.
+
+* Les événements "keypress", "keydown" et "keyup" permettent de réagir à l'utilisation du clavier.
+
+* Les événements "click", "mousedown" et "mouseup" permettent de gérer les interactions avec la souris.
+
+* Le chargement et la fermeture de la page web sont associés aux événements "load" et "beforeunload".
+
+* Un événement se propage dans l'arborescence du DOM depuis son noeud d'origine jusqu'à la racine du document. Cette propagation peut être interrompue à l'aide de la méthode "stopPropagation".
+
+* Il est possible d'annuler le comportement par défaut lié à un événement en appelant la méthode "preventDefault". 
