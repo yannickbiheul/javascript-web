@@ -1,15 +1,15 @@
-let colorValue = prompt("Entrez la couleur du texte");
-let backgroundValue = prompt("Entrez le background");
-
 let paras = document.getElementsByTagName('div');
-console.log(paras);
+
+let couleur = prompt('Entrez une couleur pour le texte');
+let fond = prompt('Entrez une couleur de fond');
 
 for (let i = 0; i < paras.length; i++) {
-    paras[i].style.color = colorValue;
-    paras[i].style.backgroundColor = backgroundValue;
+    paras[i].style.color = couleur;
+    paras[i].style.backgroundColor = fond;
 }
 
 
-// console.log(colorValue);
-// console.log(backgroundValue);
+
+
+
 
