@@ -34,3 +34,11 @@ Cours JavaScript sur OpenClassRooms
 * On peut remplacer un noeud existant avec la méthode "replaceChild" ou le supprimer avec "removeChild".
 
 * La manipulation du DOM en JavaScript doit se faire de manière raisonnée afin de ne pas dégrader les performances.
+
+# Le style
+
+* La propriété JavaScript "style" représente l'attribut style d'un élément du DOM. Elle permet de modifier le style de cet élément en définissant la valeur de ses propriétés CSS.
+
+* Les propriétés CSS composées s'écrivent avec la norme camelCase en JavaScript. Par exemple, "font-family" devient "fontFamily" .
+
+* La propriété JavaScript style est insuffisante pour accéder au style d'un élément. Pour cela, on utilise la fonction "getComputedStyle".
