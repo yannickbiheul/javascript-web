@@ -18,10 +18,10 @@ let contenu = document.getElementById('contenu');
 
 for (let i = 0; i < questions.length; i++) {
     let para = document.createElement('p');
-    let bouton = document.createElement('button');
-    bouton.textContent = "Afficher la réponse";
     para.innerHTML = "<strong>Question " + (i + 1) + "</strong> : <em>" + questions[i].enonce + "</em>";
     contenu.appendChild(para);
+    let bouton = document.createElement('button');
+    bouton.textContent = "Afficher la réponse";
     contenu.appendChild(bouton);
     bouton.addEventListener('click', function() {
         let result = document.createElement('p');
