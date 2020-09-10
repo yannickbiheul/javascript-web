@@ -10,9 +10,14 @@ function ajouterDessert() {
         item.textContent = desserts[compteur];
         listeDesserts.appendChild(item);
         compteur++;
+        item.addEventListener('click', function() {
+            let nouveauDessert = prompt("Entrez un dessert");
+            item.textContent = nouveauDessert;
+        })
     } else {
         bouton.removeEventListener('click', ajouterDessert);
     }
 }
 
 bouton.addEventListener('click', ajouterDessert);
+
