@@ -14,8 +14,8 @@ function changerCouleur(e) {
                 paras[i].style.color = "white";
                 break;
             case "b":
-                paras[i].style.backgroundColor = "blue";
-                paras[i].style.color = "white";
+                paras[i].style.backgroundColor = "white";
+                paras[i].style.color = "black";
                 break;
         }
     }
