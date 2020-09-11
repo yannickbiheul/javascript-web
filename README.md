@@ -58,3 +58,21 @@ Cours JavaScript sur OpenClassRooms
 * Un événement se propage dans l'arborescence du DOM depuis son noeud d'origine jusqu'à la racine du document. Cette propagation peut être interrompue à l'aide de la méthode "stopPropagation".
 
 * Il est possible d'annuler le comportement par défaut lié à un événement en appelant la méthode "preventDefault". 
+
+# Les formulaires
+
+* Les formulaires permettent de faire saisir des informations dans une page web. Les données saisies sont souvent destinées à être envoyées à un serveur web. Avant cet envoi, on peut utiliser JavaScript pour interagir avec les informations du formulaire pour enrichir et/ou contrôler la saisie.
+
+* Les zones de texte (balises "input type="text" et "textarea") possèdent une propriété "value" pour accéder à la valeur saisie.
+
+* Lorsqu'une zone de texte est la cible de saisie, on dit que cette zone possède le focus. Les événements "focus" et "blur" se déclenchent en cas d'acquisition et de perte du focus. Les méthodes "focus" et "blur" permettent de modifier la cible de saisie depuis JavaScript.
+
+* Les éléments d'option (cases à cocher, boutons radio et listes déroulantes) génèrent un évènement "change" lorsque l'utilisateur modifie son choix. 
+
+* L'élément du DOM correspondant au formulaire possède une propriété "elements" qui permet d'accéder à ses champs de saisie.
+
+* La soumission d'un formulaire entraîne l'apparition d'un événement "submit" sur le formulaire. Dans le gestionnaire d'événement associé, on peut annuler l'envoi des données en appelant la méthode "preventDefault" sur l'objet "Event" associé à l'événement.
+
+* Toute modification de la valeur saisie dans une zone de texte déclenche l'apparition d'un événement "input", qui peut être exploité pour valider la saisie en temps réel.
+
+* On peut utiliser une expression régulière pour contrôler finement la conformité d'une chaîne de caractères par rapport à un format attendu.
