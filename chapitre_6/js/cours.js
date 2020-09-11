@@ -70,3 +70,20 @@ form.addEventListener("submit", function(e) {
     }
     e.preventDefault();
 })
+
+// Verification de la longueur du mot de passe saisi
+document.getElementById("mdp").addEventListener("input", function(e) {
+    let mdp = e.target.value;
+    let longueurMdp = "faible";
+    let couleurMsg = "red";
+    if (mdp.length >= 8) {
+        longueurMdp = "suffisante";
+        couleurMsg = "green";
+    } else if (mdp.length >= 4 ) {
+        longueurMdp = "moyenne";
+        couleurMsg = "orange";
+    }
+    let aideMdpElt = document.getElementById("aideMdp");
+    aideMdpElt.textContent = "Longueur : " + longueurMdp;
+    aideMdpElt.style.color = couleurMsg;
+});
