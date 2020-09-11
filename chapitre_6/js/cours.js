@@ -90,9 +90,16 @@ document.getElementById("mdp").addEventListener("input", function(e) {
 
 // Contrôle du courriel en fin de saisie
 document.getElementById("courriel").addEventListener("blur", function(e) {
+    let regexCourriel = /.+@.+\..+/;
     let validiteCourriel = "";
-    if (e.target.value.indexOf("@") === -1) {
+    if (!regexCourriel.test(e.target.value)) {
         validiteCourriel = "Adresse invalide";
     }
     document.getElementById("aideCourriel").textContent = validiteCourriel;
 });
+
+let regex = /@/;
+console.log(regex.test(""));
+console.log(regex.test("@"));
+console.log(regex.test("sophie&mail.fr"));
+console.log(regex.test("sophie@mail.fr"));
