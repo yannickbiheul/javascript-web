@@ -87,3 +87,12 @@ document.getElementById("mdp").addEventListener("input", function(e) {
     aideMdpElt.textContent = "Longueur : " + longueurMdp;
     aideMdpElt.style.color = couleurMsg;
 });
+
+// Contrôle du courriel en fin de saisie
+document.getElementById("courriel").addEventListener("blur", function(e) {
+    let validiteCourriel = "";
+    if (e.target.value.indexOf("@") === -1) {
+        validiteCourriel = "Adresse invalide";
+    }
+    document.getElementById("aideCourriel").textContent = validiteCourriel;
+});
