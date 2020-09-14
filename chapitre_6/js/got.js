@@ -33,3 +33,35 @@ function getPersonnages(codeMaison) {
             return [];
     }
 }
+
+// Ajout des maisons à la liste select
+let select = document.getElementById("maison");
+let stark = maisons[0];
+let lannister = maisons[1];
+let baratheon = maisons[2];
+let targaryen = maisons[3];
+
+let starkName = document.createElement("option");
+starkName.textContent = stark.nom;
+starkName.setAttribute("value", stark.code);
+select.appendChild(starkName);
+
+let lannisterName = document.createElement("option");
+lannisterName.textContent = lannister.nom;
+lannisterName.setAttribute("value", lannister.code);
+select.appendChild(lannisterName);
+
+let baratheonName = document.createElement("option");
+baratheonName.textContent = baratheon.nom;
+baratheonName.setAttribute("value", baratheon.code);
+select.appendChild(baratheonName);
+
+let targaryenName = document.createElement("option");
+targaryenName.textContent = targaryen.nom;
+targaryenName.setAttribute("value", targaryen.code);
+select.appendChild(targaryenName);
+
+// Écouteurs d'événements
+select.addEventListener("change", function(e) {
+    console.log("Code maison : " + e.target.value);
+})
