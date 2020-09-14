@@ -40,6 +40,7 @@ let stark = maisons[0];
 let lannister = maisons[1];
 let baratheon = maisons[2];
 let targaryen = maisons[3];
+let liste = document.getElementById("persos");
 
 let starkName = document.createElement("option");
 starkName.textContent = stark.nom;
@@ -63,5 +64,11 @@ select.appendChild(targaryenName);
 
 // Écouteurs d'événements
 select.addEventListener("change", function(e) {
-    console.log("Code maison : " + e.target.value);
+    let listePersos = getPersonnages(e.target.value);
+    liste.textContent = "";
+    for (let i = 0; i < listePersos.length; i++) {
+        let elt = document.createElement("li");
+        elt.textContent = listePersos[i];
+        liste.appendChild(elt);
+    }
 })
