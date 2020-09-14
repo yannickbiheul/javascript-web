@@ -72,3 +72,4 @@ select.addEventListener("change", function(e) {
         liste.appendChild(elt);
     }
 })
+
