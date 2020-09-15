@@ -76,3 +76,13 @@ Cours JavaScript sur OpenClassRooms
 * Toute modification de la valeur saisie dans une zone de texte déclenche l'apparition d'un événement "input", qui peut être exploité pour valider la saisie en temps réel.
 
 * On peut utiliser une expression régulière pour contrôler finement la conformité d'une chaîne de caractères par rapport à un format attendu.
+
+# Les animations avec JavaScript
+
+* La fonction "setInterval" démarre une action répétée sous la forme d'une fonction appelée à intervalles réguliers. La fonction "clearInterval" annule une répétition démarrée avec "setInterval".
+
+* La fonction "setTimeout" exécute une action une seule fois après un certain délai.
+
+* La fonction "requestAnimationFrame" demande au navigateur d'exécuter dès que possible une fonction qui met à jour une animation. Elle est à privilégier pour les animations en temps réel. La fonction "cancelAnimationFrame" stoppe une animation lancée avec "requestAnimationFrame".
+
+* Il est également possible d'animer une page web en utilisant CSS. Le choix de la technique dépend de l'animation à réaliser.
