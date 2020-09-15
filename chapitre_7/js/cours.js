@@ -15,6 +15,9 @@ function diminuerCompteur() {
         clearInterval(intervalId);
         let titre = document.getElementById("titre");
         titre.textContent = "BOUM !!!";
+        setTimeout(function() {
+            titre.textContent = "Tout est cassé :)";
+        }, 2000);
     }
 }
 
