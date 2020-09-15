@@ -20,18 +20,24 @@ var listePays = [
     "Azerbaïdjan"
 ];
 
-let inputPays = document.getElementById("pays");
-let sugg = document.getElementById("suggestions");
+let paysElt = document.querySelector("input");
+let suggestionsElt = document.getElementById("suggestions");
 
-inputPays.addEventListener("input", function(e) {
-    for (let i = 0; i < listePays.length; i++) {
-        for (let p = 0; p <= listePays[i].length; p++) {
-            if (e.target.value === listePays[i][p]) {
-                sugg.innerHTML += listePays[i] + "<br>";
-            }
+paysElt.addEventListener("input", function() {
+    suggestionsElt.innerHTML = "";
+    listePays.forEach(function (pays) {
+        if (pays.indexOf(paysElt.value) === 0) {
+            let suggestionElt = document.createElement("div");
+            suggestionElt.classList.add("suggestion");
+            suggestionElt.textContent = pays;
+            suggestionElt.addEventListener("click", function(e) {
+                paysElt.value = e.target.textContent;
+                suggestionsElt.innerHTML = "";
+            });
+            suggestionsElt.appendChild(suggestionElt);
         }
-    }
-})
+    });
+});
 
 
 
