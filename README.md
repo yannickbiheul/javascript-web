@@ -118,3 +118,13 @@ Cours JavaScript sur OpenClassRooms
 * Une gestion minimale des erreurs est nécessaires lorsqu'on effectue des appels AJAX. Il est possible de créer une fonction générique qui centralise le code de l'appel et la gestion des erreurs.
 
 * Les fonctions "JSON.parse" et "JSON.stringify" permettent de gérer des données JSON en JavaScript. Elles sont utiles lorsque le serveur publie des informations structurées dans ce format.
+
+# Utiliser des API web
+
+* Une API est un ensemble de services offert par un logiciel à d'autres logiciels. Grâce aux API, les programmes informatiques peuvent interagir entre eux.
+
+* Les API web sont des API accessibles via HTTP ou HTTPS. Elles utilisent souvent le format JSON. Il existe d'autres types d'API, accessibles via d'autres protocoles.
+
+* On consomme une API web dans un programme au moyen d'un appel AJAX. Auparavant, il faut étudier sa documentation ou la tester à l'aide d'une extension de navigateur comme RESTClient ou Postman.
+
+* De plus en plus de sites et de services en ligne proposent des API web. Certaines sont ouvertes tandis que d'autres sont soumises à authentification, par exemple au moyen d'une clé d'accès.
