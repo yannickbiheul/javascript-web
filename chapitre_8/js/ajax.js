@@ -25,4 +25,4 @@ function afficher(reponse) {
     console.log(reponse);
 }
 
-ajaxGet("http://localhost:8090/javascript-web-srv/data/langages.txt", afficher);
+// ajaxGet("http://localhost:8090/javascript-web-srv/data/langages.txt", afficher);
